@@ -43,7 +43,8 @@ edit = $(SED) \
        -e 's|@ARPSEND[@]|$(ARPSEND)|g' \
        -e 's|@NDSEND[@]|$(NDSEND)|g' \
        -e 's|@BRCTL[@]|$(BRCTL)|g' \
-       -e 's|@VCONFIG[@]|$(VCONFIG)|g'
+       -e 's|@VCONFIG[@]|$(VCONFIG)|g' \
+       -e 's|@MODPROBE[@]|$(MODPROBE)|g'
 
 %:%.in Makefile
 	rm -f $@ $@.tmp
